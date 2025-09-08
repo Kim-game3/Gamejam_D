@@ -3,10 +3,10 @@ using UnityEngine.InputSystem;
 
 public class Move_Hands : MonoBehaviour
 {
-    [Tooltip("‘¬“x")]
+    [Tooltip("ï¿½ï¿½ï¿½x")]
     [SerializeField] float Move_Speed;
 
-    [Tooltip("Žw‚ðŠi”[‚·‚é”z—ñ")]
+    [Tooltip("ï¿½wï¿½ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½")]
     [SerializeField] GameObject[] Fingers;
 
     Rigidbody2D rb;
@@ -26,7 +26,58 @@ public class Move_Hands : MonoBehaviour
         tomb = InputSystem.actions.FindAction("Tomb");
     }
 
+    private void FixedUpdate()
+    {
+        if(little.IsPressed())
+        {
+            while(!little.IsPressed()) 
+            {
+                rb.linearVelocity = new Vector2(0, Move_Speed);
+            }
 
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        if(ring.IsPressed())
+        {
+            while(!ring.IsPressed()) 
+            {
+                rb.linearVelocity = new Vector2(Move_Speed, Move_Speed);
+            }
+
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        if (middle.IsPressed())
+        {
+            while(!middle.IsPressed())
+            {
+                rb.linearVelocity = new Vector2(Move_Speed, 0);
+            }
+
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        if(!index.IsPressed())
+        {
+            while(!index.IsPressed())
+            {
+                rb.linearVelocity = new Vector2(Move_Speed, -Move_Speed);
+            }
+
+            rb.linearVelocity = Vector2.zero;
+        }
+
+        if(tomb.IsPressed())
+        {
+            while(!tomb.IsPressed())
+            {
+                rb.linearVelocity = new Vector2(0, -Move_Speed);
+            }
+
+            rb.linearVelocity = Vector2.zero;
+        }
+    }
 
 
 
