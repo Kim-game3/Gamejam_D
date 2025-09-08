@@ -4,11 +4,10 @@
 TagManager:
   serializedVersion: 3
   tags:
-  - Tomb
-  - Index
-  - Middle
-  - Ring
-  - Little
+
+  - Finger
+  - HitBox
+
   layers:
   - Default
   - TransparentFX
