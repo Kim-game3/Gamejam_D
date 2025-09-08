@@ -409,7 +409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd48a92647ab11f40b43185b6b714823, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PuzzleTime: 9000
+  PuzzleTime: 3
   TimerText: {fileID: 1093204014}
 --- !u!4 &1690490416
 Transform:
