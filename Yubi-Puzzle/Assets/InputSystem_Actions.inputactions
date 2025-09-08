@@ -6,9 +6,45 @@
             "id": "df70fa95-8a34-4494-b137-73ab6b9c7d37",
             "actions": [
                 {
-                    "name": "MoveFingres",
+                    "name": "Little",
                     "type": "Button",
                     "id": "2ae38a17-7443-4aa2-abff-13e897a50ce5",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Ring",
+                    "type": "Button",
+                    "id": "cb14520d-528a-4f59-b73c-1e1288d054e3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Middle",
+                    "type": "Button",
+                    "id": "c2650e0a-1f82-47a3-86ea-980ea6974ae6",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Index",
+                    "type": "Button",
+                    "id": "e2b63de0-9224-4069-979f-159ce8c6359d",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                },
+                {
+                    "name": "Tomb",
+                    "type": "Button",
+                    "id": "70957cb0-0845-4a8b-a11d-f38d022645a7",
                     "expectedControlType": "",
                     "processors": "",
                     "interactions": "",
@@ -23,51 +59,51 @@
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "MoveFingres",
+                    "action": "Little",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "2ec174fd-b4a1-4a98-af73-e2a0d172b5e7",
+                    "id": "6fe75a95-b30a-4b79-8767-84704cdd9614",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "MoveFingres",
+                    "action": "Ring",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "6fb72a37-66e4-45fd-b9fc-93ffa6d195f9",
+                    "id": "0e53ad45-74bc-4251-955a-d46997b527f8",
                     "path": "<Keyboard>/e",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "MoveFingres",
+                    "action": "Middle",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "0dd63a5c-fbd2-42b7-bb19-eec1e966988a",
+                    "id": "e9c30ac2-1e42-4003-817b-c2f71918d688",
                     "path": "<Keyboard>/f",
                     "interactions": "",
                     "processors": "",
-                    "groups": ";Keyboard&Mouse",
-                    "action": "MoveFingres",
+                    "groups": "",
+                    "action": "Index",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
                     "name": "",
-                    "id": "265bf073-1223-43c4-9072-240e7304b947",
+                    "id": "270559d6-a970-4643-94fe-c70b894214a9",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": ";Keyboard&Mouse",
-                    "action": "MoveFingres",
+                    "action": "Tomb",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }
