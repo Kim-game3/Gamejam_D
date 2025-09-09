@@ -25,8 +25,19 @@ public class PuzzleTimerScript : MonoBehaviour
 
             if (PuzzleTime <= 0)
             {
+                CheckAllFingers();
                 SceneManager.LoadScene("MoveScene");
             }
         }
+    }
+    void CheckAllFingers()
+    {
+        CorrectFinger[] all = FindObjectsByType<CorrectFinger>(FindObjectsSortMode.None);
+        foreach (var cf in all)
+        {
+            cf.CheckFinger(); // © ³‰ğ”»’è‚µ‚ÄƒXƒRƒA‰ÁZ‚·‚é
+        }
+
+        Debug.Log("³‰ğ”: " + GameScore.correctScore);
     }
 }
