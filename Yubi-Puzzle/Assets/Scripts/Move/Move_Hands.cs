@@ -7,16 +7,7 @@ public class Move_Hands : MonoBehaviour
     [Tooltip("一回の入力あたりに進む距離")]
     [SerializeField] float Move_Range;
 
-    [Tooltip("速度")]
-    [SerializeField] float Move_Speed;
-
-    //private float Stop_Range = 0.05f;
-
-    //[Tooltip("入力されたキーを表示するためのテキスト")]
-    //[SerializeField] Text Debug_Text;
-
     Rigidbody2D rb;
-    //private Vector2? targetPos = null;
 
     private void Start()
     {
