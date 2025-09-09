@@ -77,7 +77,7 @@ public class FingerManager : MonoBehaviour
                                 CorrectFinger cf = hit.collider.GetComponent<CorrectFinger>();
                                 if (cf != null)
                                 {
-                                    cf.SetFinger(SelectFinger);
+                                    //cf.SetFinger(SelectFinger);
                                 }
                             }
                         }
