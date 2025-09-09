@@ -7,41 +7,25 @@ public static class GameScore
 
 public class CorrectFinger : MonoBehaviour
 {
-    public string correctFingerName; // Inspector‚Åw’è‚·‚é³‰ğ
-    private GameObject currentFinger; // ‚±‚ÌŠÖß‚ÉƒAƒ^ƒbƒ`‚³‚ê‚Ä‚¢‚éw
-    private bool isChecked = false;   // ƒXƒRƒAd•¡–h~
+    public string correctFingerName; // Inspectorâ€šÃ…Å½wâ€™Ã¨â€šÂ·â€šÃ©ÂÂ³â€°Ã°
+    private GameObject currentFinger; // â€šÂ±â€šÃŒÅ Ã–ÂÃŸâ€šÃ‰Æ’AÆ’^Æ’bÆ’`â€šÂ³â€šÃªâ€šÃ„â€šÂ¢â€šÃ©Å½w
+    private bool isChecked = false;   // Æ’XÆ’RÆ’AÂdâ€¢Â¡â€“hÅ½~
 
-    // ‚±‚±‚ğŠO•”‚©‚çŒÄ‚ÔiƒV[ƒ“‘JˆÚj
+    // â€šÂ±â€šÂ±â€šÃ°Å Oâ€¢â€â€šÂ©â€šÃ§Å’Ã„â€šÃ”ÂiÆ’VÂ[Æ’â€œâ€˜JË†ÃšÅ½Å¾Âj
     public void CheckFinger()
     {
-        if (isChecked) return;
-
-        if (currentFinger != null)
-        {
-            FingerInfo info = currentFinger.GetComponent<FingerInfo>();
-            if (info != null)
-            {
-                if (info.newName == correctFingerName)
-                {
-                    GameScore.correctScore++;
-                    Debug.Log($"{gameObject.name} ³‰ğI Score = {GameScore.correctScore}");
-                }
-                else
-                {
-                    Debug.Log($"{gameObject.name} •s³‰ğc");
-                }
-            }
-        }
-        isChecked = true;
+        public static int correctScore = 0;
+        public static int GoalTime = 0;//MoveSceneâ€šÃ…â€šÂ©â€šÂ©â€šÃâ€šÂ½Å½Å¾Å Ã”
+        public static int RemainingTime = 0;
     }
 
-    // ‘¼‚ÌƒXƒNƒŠƒvƒgiSetFingerPoint‚È‚Çj‚©‚çu‚±‚ÌŠÖß‚Éw‚ª•t‚¢‚½v‚±‚Æ‚ğ’Ê’m‚·‚é‚½‚ß‚Ìƒƒ\ƒbƒh
+    // â€˜Â¼â€šÃŒÆ’XÆ’NÆ’Å Æ’vÆ’gÂiSetFingerPointâ€šÃˆâ€šÃ‡Âjâ€šÂ©â€šÃ§Âuâ€šÂ±â€šÃŒÅ Ã–ÂÃŸâ€šÃ‰Å½wâ€šÂªâ€¢tâ€šÂ¢â€šÂ½Âvâ€šÂ±â€šÃ†â€šÃ°â€™ÃŠâ€™mâ€šÂ·â€šÃ©â€šÂ½â€šÃŸâ€šÃŒÆ’ÂÆ’\Æ’bÆ’h
     public void SetFinger(GameObject finger)
     {
         currentFinger = finger;
     }
 
-    // ŠÖß‚©‚çw‚ªŠO‚ê‚½‚Æ‚«‚ÉŒÄ‚Ô
+    // Å Ã–ÂÃŸâ€šÂ©â€šÃ§Å½wâ€šÂªÅ Oâ€šÃªâ€šÂ½â€šÃ†â€šÂ«â€šÃ‰Å’Ã„â€šÃ”
     public void ClearFinger()
     {
         currentFinger = null;
