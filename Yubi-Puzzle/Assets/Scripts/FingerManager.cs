@@ -23,13 +23,14 @@ public class FingerManager : MonoBehaviour
             {
                 Assign_Finger finger = hit.collider.GetComponent<Assign_Finger>();
 
-                if(finger != null)
+                if (finger != null && SelectFinger == null) 
                 {
                     SelectFinger = hit.collider.gameObject;
                     finger.OnFingerClicked();
                 }
                 else if (hit.collider.CompareTag("Finger"))
                 {
+                    Debug.Log("Finger is Clicked Double");
                     Vector3 tmp = finger.transform.position;
                     finger.transform.position = hit.collider.gameObject.transform.position;
                     hit.collider.gameObject.transform.position = tmp;
@@ -43,10 +44,16 @@ public class FingerManager : MonoBehaviour
                 {
                     Debug.Log("HitBox is clicked");
                     SetFingerPoint sfp = hit.collider.GetComponent<SetFingerPoint>();
-                    if (sfp != null)
+                    if (sfp != null && SelectFinger != null)
                     {
                         sfp.SetFinger(SelectFinger);
                         hit.collider.gameObject.SetActive(false);
+
+                        FingerInfo info = SelectFinger.GetComponent<FingerInfo>();
+                        if(info != null)
+                        {
+                            info.currentHitBox = hit.collider.gameObject;
+                        }
                     }
 
                     for (int i = 0; i < Finger.Length; i++)
@@ -60,6 +67,21 @@ public class FingerManager : MonoBehaviour
             {
                 Debug.Log("Air Click");
 
+                if (SelectFinger != null)
+                {
+                    FingerInfo info = SelectFinger.GetComponent<FingerInfo>();
+                    if(info != null)
+                    {
+                        // éwÇå≥ÇÃà íuÇ…ñﬂÇµÅAHitBoxÇïúäàÇ≥ÇπÇÈ
+                        SelectFinger.transform.position = info.InitialPosition;
+
+                        if(info.currentHitBox != null)
+                        {
+                            info.currentHitBox.SetActive(true);
+                            info.currentHitBox = null;
+                        }
+                    }
+                }
                 for (int i = 0; i < Finger.Length; i++)
                 {
                     Finger[i].isClick = false;
