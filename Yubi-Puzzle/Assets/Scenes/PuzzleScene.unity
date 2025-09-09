@@ -187,6 +187,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 839712761956272959, guid: 4fcbedcead98f3b478da21cc6c873e68, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d5b2c40e908866442b3a15dc0acf7bfe, type: 2}
+    - target: {fileID: 1566876372307914731, guid: 4fcbedcead98f3b478da21cc6c873e68, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d5b2c40e908866442b3a15dc0acf7bfe, type: 2}
     - target: {fileID: 3936730183002800263, guid: 4fcbedcead98f3b478da21cc6c873e68, type: 3}
       propertyPath: newName
       value: fourth_finger
@@ -199,6 +207,10 @@ PrefabInstance:
       propertyPath: newName
       value: second_finger
       objectReference: {fileID: 0}
+    - target: {fileID: 4281268923674930829, guid: 4fcbedcead98f3b478da21cc6c873e68, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: d5b2c40e908866442b3a15dc0acf7bfe, type: 2}
     - target: {fileID: 6735679706584268623, guid: 4fcbedcead98f3b478da21cc6c873e68, type: 3}
       propertyPath: newName
       value: thumb
@@ -263,6 +275,14 @@ PrefabInstance:
     - target: {fileID: 4909352042177289127, guid: 13aa823e9e827ba4584c3ae51a64e55f, type: 3}
       propertyPath: m_Name
       value: HandTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924661087099905157, guid: 13aa823e9e827ba4584c3ae51a64e55f, type: 3}
+      propertyPath: m_Radius
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 8924661087099905157, guid: 13aa823e9e827ba4584c3ae51a64e55f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
