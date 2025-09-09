@@ -30,10 +30,22 @@ public class FingerManager : MonoBehaviour
                 }
                 else if (hit.collider.CompareTag("Finger"))
                 {
-                    Debug.Log("Finger is Clicked Double");
+                    Debug.Log("Swap Fingers!");
+                    GameObject otherFinger = hit.collider.gameObject;
+                    FingerInfo infoA = SelectFinger.GetComponent<FingerInfo>();
+                    FingerInfo infoB = otherFinger.GetComponent<FingerInfo>();
+
+                    //HitBox‚Ì•Û‘¶
+                    GameObject hitBoxA = infoA.currentHitBox;
+                    GameObject hitBoxB = infoB.currentHitBox;
+
                     Vector3 tmp = finger.transform.position;
                     finger.transform.position = hit.collider.gameObject.transform.position;
                     hit.collider.gameObject.transform.position = tmp;
+
+                    infoA.currentHitBox = hitBoxB;
+                    infoB.currentHitBox = hitBoxA;
+
                     for (int i = 0; i < Finger.Length; i++)
                     {
                         Finger[i].isClick = false;
@@ -46,12 +58,16 @@ public class FingerManager : MonoBehaviour
                     SetFingerPoint sfp = hit.collider.GetComponent<SetFingerPoint>();
                     if (sfp != null && SelectFinger != null)
                     {
-                        sfp.SetFinger(SelectFinger);
-                        hit.collider.gameObject.SetActive(false);
-
                         FingerInfo info = SelectFinger.GetComponent<FingerInfo>();
                         if(info != null)
                         {
+                            if (info.currentHitBox != null)
+                            {
+                                info.currentHitBox.SetActive(true);
+                                info.currentHitBox = null;
+                            }
+                            sfp.SetFinger(SelectFinger);
+                            hit.collider.gameObject.SetActive(false);
                             info.currentHitBox = hit.collider.gameObject;
                         }
                     }
