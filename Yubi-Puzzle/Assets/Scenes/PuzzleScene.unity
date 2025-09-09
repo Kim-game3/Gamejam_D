@@ -219,6 +219,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Finger(Test)
       objectReference: {fileID: 0}
+    - target: {fileID: 9003867294449867214, guid: 4fcbedcead98f3b478da21cc6c873e68, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -275,6 +279,10 @@ PrefabInstance:
     - target: {fileID: 4909352042177289127, guid: 13aa823e9e827ba4584c3ae51a64e55f, type: 3}
       propertyPath: m_Name
       value: HandTest
+      objectReference: {fileID: 0}
+    - target: {fileID: 4909352042177289127, guid: 13aa823e9e827ba4584c3ae51a64e55f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8924661087099905157, guid: 13aa823e9e827ba4584c3ae51a64e55f, type: 3}
       propertyPath: m_Radius
@@ -446,6 +454,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FingerPoint
       objectReference: {fileID: 0}
+    - target: {fileID: 8421148336391058328, guid: b3a704fb3c68e02418768672ac1f44f2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -497,6 +509,10 @@ PrefabInstance:
     - target: {fileID: 6971983764597626951, guid: 8e5d97d6dd8d8494a8486d24953dbe56, type: 3}
       propertyPath: m_Name
       value: FingerManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 6971983764597626951, guid: 8e5d97d6dd8d8494a8486d24953dbe56, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033217568962843004, guid: 8e5d97d6dd8d8494a8486d24953dbe56, type: 3}
       propertyPath: m_LocalPosition.x
@@ -883,6 +899,10 @@ PrefabInstance:
     - target: {fileID: 9143481444421980358, guid: 7aa90091464ba7741a84ef68e30dc5b9, type: 3}
       propertyPath: m_Name
       value: HitBox(Test)
+      objectReference: {fileID: 0}
+    - target: {fileID: 9143481444421980358, guid: 7aa90091464ba7741a84ef68e30dc5b9, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
