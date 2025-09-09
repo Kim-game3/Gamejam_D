@@ -73,6 +73,12 @@ public class FingerManager : MonoBehaviour
                                 sfp.SetFinger(SelectFinger);
                                 hit.collider.gameObject.SetActive(false);
                                 info.currentHitBox = hit.collider.gameObject;
+
+                                CorrectFinger cf = hit.collider.GetComponent<CorrectFinger>();
+                                if (cf != null)
+                                {
+                                    cf.SetFinger(SelectFinger);
+                                }
                             }
                         }
 
