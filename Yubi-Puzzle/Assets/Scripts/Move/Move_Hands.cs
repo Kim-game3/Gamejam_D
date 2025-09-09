@@ -8,7 +8,9 @@ public class Move_Hands : MonoBehaviour
     [Tooltip("一回の入力あたりに進む距離")]
     [SerializeField] float Move_Range;
 
-    [SerializeField] GameObject[] Fingers;
+    private GameObject[] Fingers;
+
+    [SerializeField] Transform parent;
 
     Rigidbody2D rb;
     private int L_count = 0;
@@ -19,7 +21,13 @@ public class Move_Hands : MonoBehaviour
 
     private void Start()
     {
+        int count = parent.childCount;
+        Fingers = new GameObject[count];
         rb = GetComponent<Rigidbody2D>();
+        for(int i = 0; i < Fingers.Length; i++)
+        {
+            Fingers[i] = parent.GetChild(i).gameObject;
+        }
     }
 
     private void Update()

@@ -1353,6 +1353,10 @@ PrefabInstance:
       value: HandBase_A_00
       objectReference: {fileID: 0}
     - target: {fileID: 7345673294668211011, guid: 9bb56c23fc6d1a14c8b7d87804254041, type: 3}
+      propertyPath: parent
+      value: 
+      objectReference: {fileID: 911711161}
+    - target: {fileID: 7345673294668211011, guid: 9bb56c23fc6d1a14c8b7d87804254041, type: 3}
       propertyPath: Fingers.Array.size
       value: 5
       objectReference: {fileID: 0}
