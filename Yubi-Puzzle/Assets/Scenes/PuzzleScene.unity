@@ -471,6 +471,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 3729357635927458525, guid: 8e5d97d6dd8d8494a8486d24953dbe56, type: 3}
+      propertyPath: CountdownWindow
+      value: 
+      objectReference: {fileID: 1167992572}
+    - target: {fileID: 3729357635927458525, guid: 8e5d97d6dd8d8494a8486d24953dbe56, type: 3}
       propertyPath: 'Finger.Array.data[0]'
       value: 
       objectReference: {fileID: 1497693892}
